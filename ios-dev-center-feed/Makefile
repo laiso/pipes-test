@@ -1,2 +1,0 @@
-test:
-	python -munittest tests

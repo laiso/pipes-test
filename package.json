@@ -1,0 +1,7 @@
+{
+  "name": "pipes-test",
+  "version": "0.0.1",
+  "scripts":{
+    "test": "./node_modules/.bin/mocha -t 20000 --compilers coffee:coffee-script *.coffee -R xunit > report.xml"
+  }
+}
