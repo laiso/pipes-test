@@ -1,6 +1,12 @@
 {
   "name": "pipes-test",
   "version": "0.0.1",
+  "dependencies":{
+    "coffee-script": "*",
+    "cheerio": "*",
+    "request": "*",
+    "mocha": "*"
+  },
   "scripts":{
     "test": "./node_modules/.bin/mocha -t 20000 --compilers coffee:coffee-script *.coffee -R xunit > report.xml"
   }
