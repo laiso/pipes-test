@@ -2,13 +2,13 @@ assert = require('assert')
 
 describe 'Yahoo! Pipesに登録したパイプの動作監視テスト', ->
 
-  describe 'TwitterUserFeed (http://pipes.yahoo.com/laiso/twitter_user_feed )', ->
+  describe 'Apple Developer Center iOS Sample Code Update (http://pipes.yahoo.com/pipes/pipe.info?_id=2e692378a03f70e68eeaefbd75927624 )', ->
     it 'SampleCodeのフィードにitemが20個入って返ってくる', (done) ->
       loadPipes 'http://pipes.yahoo.com/pipes/pipe.run?_id=2e692378a03f70e68eeaefbd75927624&_render=rss', (items) ->
         assert items.length is 20
         done()
 
-  describe 'TwitterUserFeed (http://pipes.yahoo.com/laiso/twitter_user_feed )', ->
+  describe 'Apple Developer Center iOS Documentation Update (http://pipes.yahoo.com/pipes/pipe.info?_id=265d351456e157e65ba1df00baf8c10d )', ->
     it 'Dcoument Updateのフィードにitemが20個入って返ってくる', (done) ->
       loadPipes 'http://pipes.yahoo.com/pipes/pipe.run?_id=265d351456e157e65ba1df00baf8c10d&_render=rss', (items) ->
         assert items.length is 20
